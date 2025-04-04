@@ -1,2 +1,10 @@
-greeting:
-  message: "hello"
+quarkus:
+  jib:
+    platforms:
+      - linux/amd64
+      - linux/arm64/v8
+  container-image:
+    builder: jib
+    registry: quay.io
+    group: indiealexh
+    image: whoami
